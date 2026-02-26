@@ -41,21 +41,6 @@ export function Features() {
         </p>
       </motion.div>
 
-      {/* Donna at whiteboard — strategic planning */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
-        transition={{ duration: 0.8 }}
-        className="mb-20 rounded-[20px] border border-white/10 overflow-hidden"
-      >
-        <img
-          src="/images/donna_features.png"
-          alt="Donna planning strategy at whiteboard"
-          className="w-full h-auto object-cover"
-        />
-      </motion.div>
-
       <div className="flex flex-col gap-20">
         {FEATURES.map((feature, index) => (
           <motion.div
