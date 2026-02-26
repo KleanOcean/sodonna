@@ -28,7 +28,7 @@ export function Footer() {
   return (
     <footer className="py-32 px-6 flex flex-col items-center text-center relative">
       <div className="absolute bottom-0 left-0 right-0 h-[50vh] bg-gradient-to-t from-[#7C3AED]/10 to-transparent pointer-events-none" />
-      
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -43,23 +43,23 @@ export function Footer() {
         <div className="w-12 h-[1px] bg-white/10 mx-auto mb-12" />
 
         <p className="text-xl text-white/50 mb-10">
-          准备好迎接你的完美合伙人了吗？<br />
-          第一批"1.1人公司"正在集结。
+          Ready to meet your perfect partner?<br />
+          The first wave of "1.1 Companies" is assembling now.
         </p>
 
         <form onSubmit={handleSubmit} className="mb-24">
-          <motion.div 
+          <motion.div
             animate={status === 'error' ? { x: [-10, 10, -10, 10, 0] } : {}}
             transition={{ duration: 0.4 }}
             className={`flex flex-col sm:flex-row items-center p-1.5 rounded-full border transition-colors duration-300 ${
-              status === 'success' ? 'border-[#10B981] bg-[#10B981]/10' : 
-              status === 'error' ? 'border-red-500/50 bg-red-500/10' : 
+              status === 'success' ? 'border-[#10B981] bg-[#10B981]/10' :
+              status === 'error' ? 'border-red-500/50 bg-red-500/10' :
               'border-white/10 bg-white/5 focus-within:border-white/25'
             }`}
           >
             <input
               type="email"
-              placeholder="输入你的邮箱地址"
+              placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               disabled={status === 'loading' || status === 'success'}
@@ -76,10 +76,10 @@ export function Footer() {
                 <Loader2 className="w-5 h-5 animate-spin" />
               ) : status === 'success' ? (
                 <span className="flex items-center gap-2">
-                  <Check className="w-5 h-5" /> 已加入候补
+                  <Check className="w-5 h-5" /> You're on the list
                 </span>
               ) : (
-                '让我加入优先体验'
+                'Join the Waitlist'
               )}
             </button>
           </motion.div>

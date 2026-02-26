@@ -2,23 +2,23 @@ import { motion } from 'motion/react';
 
 const FEATURES = [
   {
-    title: "过目不忘的数字外脑",
-    subtitle: "The Photographic Memory",
-    desc: "你只管随口输出灵感。所有的决策背景、语音备忘、客户日志，SoDonna 都会自动为你归档、打标签，随时等你检索。",
+    title: "The Photographic Memory",
+    subtitle: "Your Digital Second Brain",
+    desc: "Just speak your mind. Every decision context, voice memo, and client note — SoDonna auto-files, auto-tags, and keeps it all searchable on demand.",
     align: "left",
     image: "/images/feature_brain.png"
   },
   {
-    title: "化繁为简的指挥中心",
-    subtitle: "The Command Center",
-    desc: "告别混乱的书签栏。我们将你最关心的核心指标（流量、转化、财务）整合在一个极简的控制面板中。每天只需 5 分钟，掌控全局健康度。",
+    title: "The Command Center",
+    subtitle: "Clarity in One Glance",
+    desc: "Ditch the bookmark chaos. We consolidate the metrics you care about most — traffic, conversions, financials — into one minimal dashboard. Five minutes a day. Total control.",
     align: "right",
     image: "/images/feature_dashboard.png"
   },
   {
-    title: "无缝衔接的工具流",
-    subtitle: "The Seamless Executor",
-    desc: "\"So, Donna, 帮我把这篇草稿分发出去并更新日志。\" 你的标准动作，由我通过自动化引擎无声完成。帮你死死守住最宝贵的\"心流\"状态。",
+    title: "The Seamless Executor",
+    subtitle: "Your Autopilot Workflow",
+    desc: "\"So, Donna, distribute this draft and update my logs.\" Your routine moves, handled silently by our automation engine. We guard your precious flow state.",
     align: "left",
     image: "/images/feature_flow.png"
   }
@@ -34,10 +34,10 @@ export function Features() {
         className="text-center mb-24"
       >
         <h2 className="font-serif text-3xl md:text-[44px] text-white mb-4">
-          为什么你需要 SoDonna？
+          Why You Need SoDonna
         </h2>
         <p className="font-serif text-2xl md:text-[36px] text-white/60 italic">
-          因为我永远比你提前三步。
+          Because I'm always three steps ahead.
         </p>
       </motion.div>
 

@@ -650,28 +650,33 @@ radial-gradient(circle at 50% 50%, rgba(124,58,237,0.15) 0%, transparent 60%)
 
 ### 5.7 图片资源规范
 
-落地页共需 **4 张 AI 生成图片**，风格统一为 Dark Glassmorphism，背景纯黑 `#09090B`。
+落地页共需 **5 张 AI 生成图片**，风格统一为 Dark Glassmorphism，背景纯黑 `#09090B`。视觉灵感来源于 Donna Paulsen（《Suits》），强调自信、优雅、专业感。
+
+> **语言**: 落地页默认语言为 **English**。所有 UI 文案、按钮、标题均使用英文。
 
 #### 5.7.1 Feature Section（3 张，替换占位图）
 
 | 编号 | 对应功能 | 文件名 | 尺寸 | 图片描述 |
 |------|----------|--------|------|----------|
-| F-1 | 数字外脑 (Photographic Memory) | `feature_brain.png` | 800×600 | Dark premium UI mockup: knowledge base / note-taking app on black (#09090B) background. Glassmorphic cards with colorful tags (purple, blue, cyan pills), search bar with soft glow at top, floating note cards with blur edges. Clean minimal SaaS aesthetic. |
-| F-2 | 指挥中心 (Command Center) | `feature_dashboard.png` | 800×600 | Dark premium UI mockup: analytics dashboard on black background. Three metric cards (revenue/traffic/conversion) with glowing accent lines (purple, blue, cyan). Minimal charts with gradient area fills. Glassmorphic frosted panels. Executive dashboard — clean, data-rich, not cluttered. |
-| F-3 | 工具流 (Seamless Executor) | `feature_flow.png` | 800×600 | Dark premium UI mockup: automation workflow on black background. Connected nodes forming horizontal flow with glowing gradient connection lines (purple → blue → cyan). Each node is a glassmorphic rounded rectangle with icon. Content distributing to multiple platforms. |
+| F-1 | The Photographic Memory | `feature_brain.png` | 800×600 | Dark premium UI mockup: knowledge base / note-taking app on black (#09090B) background. Glassmorphic cards with colorful tags (purple, blue, cyan pills), search bar with soft glow at top, floating note cards with blur edges. Clean minimal SaaS aesthetic. |
+| F-2 | The Command Center | `feature_dashboard.png` | 800×600 | Dark premium UI mockup: analytics dashboard on black background. Three metric cards (revenue/traffic/conversion) with glowing accent lines (purple, blue, cyan). Minimal charts with gradient area fills. Glassmorphic frosted panels. Executive dashboard — clean, data-rich, not cluttered. |
+| F-3 | The Seamless Executor | `feature_flow.png` | 800×600 | Dark premium UI mockup: automation workflow on black background. Connected nodes forming horizontal flow with glowing gradient connection lines (purple → blue → cyan). Each node is a glassmorphic rounded rectangle with icon. Content distributing to multiple platforms. |
 
-#### 5.7.2 Hero Section（1 张）
+#### 5.7.2 Donna-Inspired Images（2 张）
 
-| 编号 | 文件名 | 尺寸 | 图片描述 |
-|------|--------|------|----------|
-| H-1 | `hero_orb.png` | 1200×800 | Abstract 3D glass orb on pure black background with purple-to-cyan gradient refraction, floating above subtle reflective surface. Ethereal light rays. Ultra-minimal, cinematic lighting. No text. Evokes intelligence and elegance. |
+| 编号 | 用途 | 文件名 | 尺寸 | 图片描述 |
+|------|------|--------|------|----------|
+| D-1 | Hero 背景 | `hero_donna.png` | 1200×800 | Cinematic portrait of an elegant professional woman inspired by a powerful executive assistant archetype. Burgundy designer dress, warm golden backlighting, confident knowing smile, dark moody office with bokeh city lights through floor-to-ceiling windows. Editorial fashion photography. |
+| D-2 | Philosophy Section | `donna_philosophy.png` | 1200×600 | Artistic double-exposure: confident professional woman's silhouette merged with glowing digital connections and data streams. Purple-to-cyan light traces flow like neural pathways. Pure black background. She IS the system — the intelligence behind the scenes. |
 
 #### 5.7.3 放置规则
 
 - 所有图片存放于 `sodonna_webapp/public/images/`
 - Feature 图片通过 `/images/feature_*.png` 路径引用
-- Hero 图片作为背景装饰元素，置于文字内容层之下，`opacity: 0.3`，绝对定位居中
-- 图片格式 PNG，无透明通道需求
+- Hero Donna 图片作为背景装饰元素，置于文字内容层之下，`opacity: 0.2`，绝对定位居中
+- Philosophy Donna 图片在 "The 1.1 Company" 标题下方，带圆角边框和 border-white/10
+- 图片格式 PNG
+- `hero_orb.png` 已弃用，由 `hero_donna.png` 替代
 
 ---
 

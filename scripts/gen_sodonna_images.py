@@ -51,14 +51,28 @@ IMAGES = [
         ),
     },
     {
-        "name": "hero_orb.png",
+        "name": "hero_donna.png",
         "prompt": (
-            "Generate an abstract 3D glass orb floating on a pure black background. The orb "
-            "has purple-to-cyan gradient refraction and internal light caustics. It floats "
-            "above a subtle dark reflective surface with soft reflection. Ethereal light rays "
-            "emanate from behind. Ultra-minimal composition, cinematic lighting, no text "
-            "anywhere. The image evokes intelligence and elegance. Photorealistic 3D render "
-            "style. 1200x800 aspect ratio, wide format."
+            "Cinematic portrait of an elegant professional woman inspired by a powerful "
+            "executive assistant archetype. She is standing confidently in a modern dark "
+            "office, wearing a tailored designer dress in deep burgundy or navy. Warm golden "
+            "backlighting creates a silhouette halo effect. She has an knowing, confident "
+            "smile — the look of someone who already has all the answers. Shot from slightly "
+            "below, evoking authority and grace. Dark moody atmosphere with bokeh city lights "
+            "visible through floor-to-ceiling windows behind her. Photorealistic, editorial "
+            "fashion photography style. No text. 1200x800 wide format."
+        ),
+    },
+    {
+        "name": "donna_philosophy.png",
+        "prompt": (
+            "Artistic double-exposure style image: a confident professional woman's "
+            "silhouette merged with a glowing network of digital connections and data "
+            "streams. Purple and cyan light traces flow through the silhouette like neural "
+            "pathways. Pure black background. The woman's posture is poised and powerful — "
+            "arms crossed or hand on hip. The digital elements suggest she IS the system, "
+            "the intelligence behind the scenes. Cinematic, ethereal, no text. "
+            "Photorealistic with artistic digital effects. 1200x600 wide format."
         ),
     },
 ]

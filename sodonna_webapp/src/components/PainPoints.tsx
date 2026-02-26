@@ -4,20 +4,20 @@ import { BrainCircuit, Wrench, FileClock } from 'lucide-react';
 const PAIN_POINTS = [
   {
     icon: BrainCircuit,
-    title: "精力碎片化",
-    desc: "上一秒在构思宏大战略，下一秒却在寻找昨天随手记下的某个客户灵感？",
+    title: "Fragmented Focus",
+    desc: "One moment you're crafting a grand strategy, the next you're hunting for that customer insight you scribbled down yesterday.",
     color: "from-purple-500/20"
   },
   {
     icon: Wrench,
-    title: "工具综合征",
-    desc: "订阅了无数个 SaaS 软件，却每天要把一半的时间花在将数据从 A 搬运到 B 上。",
+    title: "Tool Overload",
+    desc: "You're subscribed to a dozen SaaS tools, yet half your day is spent moving data from A to B.",
     color: "from-blue-500/20"
   },
   {
     icon: FileClock,
-    title: "决策无记录",
-    desc: "没有人帮你做会议纪要，没有复盘日志，上个月的成功经验这个月无法复用。",
+    title: "Zero Decision Trail",
+    desc: "No one takes meeting notes for you. No debrief logs. Last month's winning playbook? Already forgotten.",
     color: "from-cyan-500/20"
   }
 ];
@@ -33,8 +33,9 @@ export function PainPoints() {
         className="mb-20"
       >
         <h2 className="font-serif text-3xl md:text-5xl text-gradient bg-gradient-to-b from-white to-white/60 tracking-[0.02em] leading-tight">
-          一人公司的真相：<br />
-          你以为你在做 CEO，其实你在做打字员。
+          The Solo CEO Reality:<br />
+          You think you're running a company.<br />
+          You're actually drowning in busywork.
         </h2>
       </motion.div>
 
@@ -50,7 +51,7 @@ export function PainPoints() {
           >
             {/* Top gradient line */}
             <div className={`absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r ${point.color} to-transparent opacity-50 group-hover:opacity-100 transition-opacity`} />
-            
+
             <div className="w-14 h-14 rounded-full flex items-center justify-center mb-8 relative">
               <div className={`absolute inset-0 rounded-full bg-gradient-to-br ${point.color} to-transparent opacity-50`} />
               <point.icon className="w-6 h-6 text-white/80 relative z-10" />

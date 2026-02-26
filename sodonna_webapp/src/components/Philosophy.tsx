@@ -8,7 +8,7 @@ export function Philosophy() {
            style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.5) 0%, transparent 60%)' }} />
 
       <div className="max-w-[1100px] mx-auto relative z-10 flex flex-col items-center text-center">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -16,18 +16,33 @@ export function Philosophy() {
         >
           The 1.1 Company
         </motion.h2>
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="font-serif text-3xl md:text-[40px] text-white tracking-[0.12em] mb-24"
+          className="font-serif text-3xl md:text-[40px] text-white tracking-[0.12em] mb-16"
         >
-          超级个体的终极形态。
+          The ultimate form of a super-individual.
         </motion.p>
 
+        {/* Donna philosophy image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          className="w-full max-w-3xl mb-24 rounded-[24px] overflow-hidden border border-white/10"
+        >
+          <img
+            src="/images/donna_philosophy.png"
+            alt="The intelligence behind the scenes"
+            className="w-full h-auto object-cover"
+          />
+        </motion.div>
+
         <div className="flex flex-col gap-8 w-full max-w-4xl text-left mb-24">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.6, filter: 'blur(20px)' }}
             whileInView={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
             viewport={{ once: true }}
@@ -39,13 +54,13 @@ export function Philosophy() {
             </div>
             <div className="flex-1 pt-4">
               <p className="text-xl md:text-[20px] text-white/80 leading-[1.8]">
-                代表着你：<br />
-                独一无二的战略眼光、创意和商业直觉。
+                That's you:<br />
+                Your irreplaceable strategic vision, creativity, and business instinct.
               </p>
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.6, filter: 'blur(20px)' }}
             whileInView={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
             viewport={{ once: true }}
@@ -57,21 +72,21 @@ export function Philosophy() {
             </div>
             <div className="flex-1 pt-4">
               <p className="text-xl md:text-[20px] text-white/80 leading-[1.8]">
-                代表着 SoDonna：<br />
-                一套不知疲倦、没有情绪、永远在线的支持系统。
+                That's SoDonna:<br />
+                A tireless, emotionless, always-on support system that never sleeps.
               </p>
             </div>
           </motion.div>
         </div>
 
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-xl text-white/50 leading-[1.8] max-w-2xl"
         >
-          我们不干涉你的决断，<br />
-          我们只负责让你的每一个决断都丝滑落地。
+          We don't interfere with your decisions.<br />
+          We just make sure every one of them lands flawlessly.
         </motion.p>
       </div>
     </section>

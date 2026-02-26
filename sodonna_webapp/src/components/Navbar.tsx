@@ -22,16 +22,16 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-[72px] flex items-center justify-between">
         <div className="font-serif text-xl font-medium text-white">SoDonna</div>
-        
+
         <div className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-white/60 hover:text-white transition-colors text-sm">功能</a>
-          <a href="#philosophy" className="text-white/60 hover:text-white transition-colors text-sm">理念</a>
+          <a href="#features" className="text-white/60 hover:text-white transition-colors text-sm">Features</a>
+          <a href="#philosophy" className="text-white/60 hover:text-white transition-colors text-sm">Philosophy</a>
           <button className="glass-button px-5 py-2 rounded-full text-sm text-white font-medium">
-            登录
+            Sign In
           </button>
         </div>
 
-        <button 
+        <button
           className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
@@ -41,15 +41,15 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="absolute top-[72px] left-0 right-0 bg-[#09090B]/95 backdrop-blur-xl border-b border-white/10 p-6 flex flex-col gap-6 md:hidden"
         >
-          <a href="#features" className="text-white/80 text-lg" onClick={() => setMobileMenuOpen(false)}>功能</a>
-          <a href="#philosophy" className="text-white/80 text-lg" onClick={() => setMobileMenuOpen(false)}>理念</a>
+          <a href="#features" className="text-white/80 text-lg" onClick={() => setMobileMenuOpen(false)}>Features</a>
+          <a href="#philosophy" className="text-white/80 text-lg" onClick={() => setMobileMenuOpen(false)}>Philosophy</a>
           <button className="bg-white text-black rounded-full py-3 font-medium mt-4">
-            开始使用
+            Get Started
           </button>
         </motion.div>
       )}
