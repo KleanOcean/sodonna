@@ -8,7 +8,7 @@ export function Hero() {
         src="/images/hero_donna.png"
         alt=""
         aria-hidden="true"
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] md:w-[800px] opacity-20 pointer-events-none select-none"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] md:w-[900px] opacity-40 pointer-events-none select-none"
       />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
