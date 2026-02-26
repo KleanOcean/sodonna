@@ -39,6 +39,21 @@ export function PainPoints() {
         </h2>
       </motion.div>
 
+      {/* Donna overwhelmed — the "before" image */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.8 }}
+        className="mb-16 rounded-[20px] border border-white/10 overflow-hidden"
+      >
+        <img
+          src="/images/donna_painpoints.png"
+          alt="Overwhelmed at desk — the solo CEO reality"
+          className="w-full h-auto object-cover"
+        />
+      </motion.div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {PAIN_POINTS.map((point, index) => (
           <motion.div

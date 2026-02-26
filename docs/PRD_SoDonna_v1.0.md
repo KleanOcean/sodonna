@@ -662,21 +662,31 @@ radial-gradient(circle at 50% 50%, rgba(124,58,237,0.15) 0%, transparent 60%)
 | F-2 | The Command Center | `feature_dashboard.png` | 800×600 | Dark premium UI mockup: analytics dashboard on black background. Three metric cards (revenue/traffic/conversion) with glowing accent lines (purple, blue, cyan). Minimal charts with gradient area fills. Glassmorphic frosted panels. Executive dashboard — clean, data-rich, not cluttered. |
 | F-3 | The Seamless Executor | `feature_flow.png` | 800×600 | Dark premium UI mockup: automation workflow on black background. Connected nodes forming horizontal flow with glowing gradient connection lines (purple → blue → cyan). Each node is a glassmorphic rounded rectangle with icon. Content distributing to multiple platforms. |
 
-#### 5.7.2 Donna-Inspired Images（2 张）
+#### 5.7.2 Donna Images（5 张，一致外观）
 
-| 编号 | 用途 | 文件名 | 尺寸 | 图片描述 |
+所有 Donna 图片使用相同的一致性描述锚定（consistency anchor），确保同一人物在所有图片中外观一致：
+> 一位 30 多岁的职业女性，棕红色头发扎成低发髻，穿深色修身西装外套搭配浅色简约上衣，自然妆容，温暖肤色。现代暗色办公室，暖色台灯照明。
+
+| 编号 | 用途 | 文件名 | 尺寸 | 场景描述 |
 |------|------|--------|------|----------|
-| D-1 | Hero 背景 | `hero_donna.png` | 1200×800 | Cinematic portrait of an elegant professional woman inspired by a powerful executive assistant archetype. Burgundy designer dress, warm golden backlighting, confident knowing smile, dark moody office with bokeh city lights through floor-to-ceiling windows. Editorial fashion photography. |
-| D-2 | Philosophy Section | `donna_philosophy.png` | 1200×600 | Artistic double-exposure: confident professional woman's silhouette merged with glowing digital connections and data streams. Purple-to-cyan light traces flow like neural pathways. Pure black background. She IS the system — the intelligence behind the scenes. |
+| D-1 | Hero（左侧） | `hero_donna.png` | 800×1000 | 在办公桌前用笔记本电脑工作，暖色台灯侧面打光，咖啡杯，身后城市夜景虚化。3/4 角度，腰部以上。专注自信的表情。竖版构图。 |
+| D-2 | PainPoints（卡片上方） | `donna_painpoints.png` | 1200×500 | 面对多个屏幕和杂乱便签，揉太阳穴，压力感。"使用 SoDonna 之前"的挣扎时刻。宽幅。 |
+| D-3 | Features（标题与卡片之间） | `donna_features.png` | 1200×500 | 站在玻璃白板前画工作流程图，手持马克笔，自信微笑。战略规划时刻。宽幅。 |
+| D-4 | Philosophy（标题下方） | `donna_philosophy.png` | 1200×600 | 靠在椅子上，笔记本打开，放松满足的微笑。金色时光照明，"任务完成"氛围。宽幅。 |
+| D-5 | Footer（引用上方） | `donna_footer.png` | 800×500 | 特写肖像，直视镜头，会意的半笑。暖色侧面光，浅景深。从肩部裁切。 |
 
 #### 5.7.3 放置规则
 
 - 所有图片存放于 `sodonna_webapp/public/images/`
-- Feature 图片通过 `/images/feature_*.png` 路径引用
-- Hero Donna 图片作为背景装饰元素，置于文字内容层之下，`opacity: 0.2`，绝对定位居中
-- Philosophy Donna 图片在 "The 1.1 Company" 标题下方，带圆角边框和 border-white/10
+- Feature UI 截图通过 `/images/feature_*.png` 路径引用
+- **Hero**：Donna 图片在左侧，文字在右侧，flex row 布局，图片 **full opacity**，圆角边框
+- **PainPoints**：`donna_painpoints.png` 作为宽幅 banner 图，位于 section 标题与 3 列卡片之间
+- **Features**：`donna_features.png` 作为宽幅 banner 图，位于 section 标题与 3 个 feature row 之间
+- **Philosophy**：`donna_philosophy.png` 在 "The 1.1 Company" 标题下方，圆角边框 `border-white/10`
+- **Footer**：`donna_footer.png` 作为 200px 圆形头像，位于引用台词上方，居中
 - 图片格式 PNG
 - `hero_orb.png` 已弃用，由 `hero_donna.png` 替代
+- Mobile 端：Hero 从左右并排改为上下堆叠（图片在上，文字在下）
 
 ---
 

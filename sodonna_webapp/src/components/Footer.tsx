@@ -35,6 +35,15 @@ export function Footer() {
         viewport={{ once: true }}
         className="max-w-3xl mx-auto relative z-10"
       >
+        {/* Donna portrait */}
+        <div className="mb-10">
+          <img
+            src="/images/donna_footer.png"
+            alt="Donna"
+            className="w-[200px] h-[200px] object-cover rounded-full border-2 border-white/10 mx-auto shadow-[0_0_40px_rgba(124,58,237,0.1)]"
+          />
+        </div>
+
         <p className="font-serif text-[28px] md:text-[36px] italic text-white/70 mb-12">
           "I'm Donna. I know everything.<br />
           And I've already taken care of it."
