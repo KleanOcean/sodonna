@@ -32,7 +32,7 @@ export function Philosophy() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-md mb-24 rounded-[24px] overflow-hidden border border-white/10"
+          className="max-w-4xl w-full mb-24 rounded-[24px] overflow-hidden border border-white/10"
         >
           <img
             src="/images/donna_philosophy.png"

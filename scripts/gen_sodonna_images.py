@@ -17,72 +17,80 @@ OUT_DIR = Path(__file__).resolve().parent.parent / "sodonna_webapp" / "public" /
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Consistency anchor — included in every Donna prompt
+# This is an ORIGINAL character design, not based on any real person or copyrighted character.
 DONNA_ANCHOR = (
-    "A professional woman in her mid-30s with auburn-brown hair pulled back in a low bun, "
-    "wearing a dark fitted blazer over a simple cream top. Natural makeup, warm complexion, "
-    "light freckles. Modern dark office setting with warm desk-lamp lighting."
+    "A professional Caucasian woman in her early 30s with long auburn (copper-red) hair, "
+    "loosely wavy, side-parted and falling past her shoulders. She wears a dark fitted suit "
+    "(black or deep navy) over a black V-neck top. Fair skin with light freckles, "
+    "blue-green eyes, sculpted features. Polished but natural makeup with a dewy finish. "
+    "She radiates effortless authority — confident, composed, in total command. "
+    "Modern dark-toned office or law-firm aesthetic, warm brass desk-lamp as key light."
 )
 
 IMAGES = [
+    # --- Donna character images (4) ---
     {
         "name": "hero_donna.png",
         "prompt": (
             f"Photorealistic editorial photograph. {DONNA_ANCHOR} "
-            "She is seated at a sleek dark desk, typing on a MacBook laptop. A warm brass "
-            "desk lamp illuminates her face from the side. A ceramic coffee cup sits nearby. "
-            "Behind her, floor-to-ceiling windows show a blurred city skyline at dusk (bokeh "
-            "lights). Shot from a 3/4 angle showing her from the waist up. She has a focused, "
-            "confident expression — in her element. Portrait format, 800x1000 aspect ratio. "
-            "Warm cinematic color grading. No text."
+            "She is seated at a dark executive desk, both hands actively typing on a MacBook "
+            "laptop keyboard. A warm brass desk lamp illuminates her face from the side. A "
+            "ceramic coffee cup sits nearby. Behind her, floor-to-ceiling windows reveal a "
+            "blurred city skyline at golden-hour dusk (warm bokeh lights). Shot from a 3/4 "
+            "angle, waist up. Her facial expression is intensely focused and dead serious — "
+            "eyes wide open, alert, brows slightly raised with sharp attention, lips pressed "
+            "together firmly. No smile. She is laser-locked on the screen like a surgeon "
+            "mid-operation. Powerful, precise, all-business energy. Portrait / vertical "
+            "composition (roughly 3:4 aspect). Warm cinematic color grading, shallow depth "
+            "of field. No text, no watermarks."
         ),
     },
     {
         "name": "donna_painpoints.png",
         "prompt": (
-            f"Photorealistic editorial photograph. {DONNA_ANCHOR} "
-            "She is sitting at her desk looking overwhelmed — multiple browser tabs visible on "
-            "two monitors, sticky notes scattered everywhere, phone buzzing beside her. She is "
-            "rubbing her temples with her eyes closed, stressed expression. Papers and notebooks "
-            "are spread across the desk chaotically. The warm desk lamp still lights the scene "
-            "but the mood feels heavier. This is the 'before' moment — drowning in busywork. "
-            "Wide cinematic format, 1200x500 aspect ratio. Warm color grading. No text."
-        ),
-    },
-    {
-        "name": "donna_features.png",
-        "prompt": (
-            f"Photorealistic editorial photograph. {DONNA_ANCHOR} "
-            "She is standing confidently at a large glass whiteboard in her office, drawing a "
-            "workflow diagram with a blue marker. She has a confident, knowing smile — she has "
-            "the plan. The whiteboard shows connected boxes and arrows (a strategic workflow). "
-            "Warm desk lamp and ambient office lighting. She is turned slightly toward the "
-            "camera, marker in right hand. This is the 'strategic planning' moment — everything "
-            "organized. Wide cinematic format, 1200x500 aspect ratio. Warm color grading. No text."
+            "Photorealistic editorial photograph. A stylish male solo CEO / entrepreneur in his "
+            "late 20s to early 30s, East-Asian descent, clean-cut with short textured dark hair, "
+            "light stubble, sharp jawline. He wears a fitted black turtleneck or minimalist dark "
+            "crew-neck sweater — Steve Jobs meets modern startup founder vibe. He is sitting in a "
+            "sleek modern office with dark walls, designer furniture, and ambient mood lighting. "
+            "Two ultrawide monitors in front of him are covered in dozens of browser tabs and "
+            "notification pop-ups. Sticky notes and papers are scattered across an otherwise "
+            "clean dark desk. His phone is buzzing. He presses both hands against his temples, "
+            "brow furrowed, eyes closed — exhausted and overwhelmed despite the cool surroundings. "
+            "The contrast is the point: great office, drowning in chaos. This is the 'before "
+            "SoDonna' moment. Wide cinematic format (roughly 12:5 aspect). Moody, slightly "
+            "desaturated color grading. No text, no watermarks."
         ),
     },
     {
         "name": "donna_philosophy.png",
         "prompt": (
-            f"Photorealistic editorial photograph. {DONNA_ANCHOR} "
-            "She is sitting back in her office chair, laptop open on the desk in front of her, "
-            "looking relaxed and satisfied with a calm confident smile. Golden hour sunlight "
-            "streams through the window behind her, creating a warm halo. Her posture is open "
-            "and at ease — everything is under control. One hand rests on the chair arm. The "
-            "mood is 'mission accomplished'. Wide cinematic format, 1200x600 aspect ratio. "
-            "Warm golden color grading. No text."
+            "Photorealistic editorial photograph. The same stylish male solo CEO / entrepreneur "
+            "in his late 20s to early 30s, East-Asian descent, clean-cut with short textured dark "
+            "hair, light stubble, sharp jawline. He wears a fitted black turtleneck or minimalist "
+            "dark crew-neck sweater. He is leaning back comfortably in a high-back leather office "
+            "chair in his sleek modern office with dark walls and designer furniture. A MacBook is "
+            "open on the desk but his gaze drifts toward the floor-to-ceiling window, a calm "
+            "satisfied smile on his lips. Golden afternoon sunlight pours through the glass, "
+            "bathing the scene in warm light. His posture is open and relaxed — everything is "
+            "under control now. One hand rests on the armrest. The mood is quiet confidence: "
+            "Donna is handling everything. Wide cinematic format (roughly 2:1 aspect). "
+            "Warm golden color grading. No text, no watermarks."
         ),
     },
     {
         "name": "donna_footer.png",
         "prompt": (
             f"Photorealistic editorial close-up portrait. {DONNA_ANCHOR} "
-            "Cropped from shoulders up. She is looking directly at the camera with a knowing "
-            "half-smile — the look of someone who already has all the answers. Warm desk-lamp "
-            "lighting illuminates her face from the side, creating soft shadows. Dark office "
-            "background blurred out. Shallow depth of field. Intimate, powerful portrait. "
-            "800x500 aspect ratio. Warm cinematic color grading. No text."
+            "Cropped from the shoulders up. She looks directly into the camera with a knowing "
+            "half-smile — the expression of someone who already has every answer. Warm brass "
+            "desk-lamp light falls on her face from the left, creating soft Rembrandt-style "
+            "shadows on the opposite cheek. Dark office background, heavily blurred. Shallow "
+            "depth of field. Intimate, powerful, and warm. Suitable for circular avatar crop. "
+            "Square composition (1:1 aspect). Warm cinematic color grading. No text, no watermarks."
         ),
     },
+    # --- Feature UI mockups (3, unchanged) ---
     {
         "name": "feature_brain.png",
         "prompt": (
