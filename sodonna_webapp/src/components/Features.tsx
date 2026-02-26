@@ -6,21 +6,21 @@ const FEATURES = [
     subtitle: "The Photographic Memory",
     desc: "你只管随口输出灵感。所有的决策背景、语音备忘、客户日志，SoDonna 都会自动为你归档、打标签，随时等你检索。",
     align: "left",
-    image: "https://picsum.photos/seed/brain/800/600?blur=2"
+    image: "/images/feature_brain.png"
   },
   {
     title: "化繁为简的指挥中心",
     subtitle: "The Command Center",
     desc: "告别混乱的书签栏。我们将你最关心的核心指标（流量、转化、财务）整合在一个极简的控制面板中。每天只需 5 分钟，掌控全局健康度。",
     align: "right",
-    image: "https://picsum.photos/seed/dashboard/800/600?blur=2"
+    image: "/images/feature_dashboard.png"
   },
   {
     title: "无缝衔接的工具流",
     subtitle: "The Seamless Executor",
     desc: "\"So, Donna, 帮我把这篇草稿分发出去并更新日志。\" 你的标准动作，由我通过自动化引擎无声完成。帮你死死守住最宝贵的\"心流\"状态。",
     align: "left",
-    image: "https://picsum.photos/seed/flow/800/600?blur=2"
+    image: "/images/feature_flow.png"
   }
 ];
 
@@ -55,7 +55,7 @@ export function Features() {
               <>
                 <div className="flex-1 w-full">
                   <div className="rounded-[16px] border border-white/10 overflow-hidden shadow-[0_0_40px_rgba(99,102,241,0.08)] hover:shadow-[0_0_60px_rgba(99,102,241,0.15)] transition-shadow duration-500">
-                    <img src={feature.image} alt={feature.title} referrerPolicy="no-referrer" className="w-full h-auto object-cover aspect-[4/3] hover:scale-[1.02] transition-transform duration-700" />
+                    <img src={feature.image} alt={feature.title} className="w-full h-auto object-cover aspect-[4/3] hover:scale-[1.02] transition-transform duration-700" />
                   </div>
                 </div>
                 <div className="flex-1">
@@ -73,7 +73,7 @@ export function Features() {
                 </div>
                 <div className="flex-1 w-full order-1 md:order-2">
                   <div className="rounded-[16px] border border-white/10 overflow-hidden shadow-[0_0_40px_rgba(99,102,241,0.08)] hover:shadow-[0_0_60px_rgba(99,102,241,0.15)] transition-shadow duration-500">
-                    <img src={feature.image} alt={feature.title} referrerPolicy="no-referrer" className="w-full h-auto object-cover aspect-[4/3] hover:scale-[1.02] transition-transform duration-700" />
+                    <img src={feature.image} alt={feature.title} className="w-full h-auto object-cover aspect-[4/3] hover:scale-[1.02] transition-transform duration-700" />
                   </div>
                 </div>
               </>

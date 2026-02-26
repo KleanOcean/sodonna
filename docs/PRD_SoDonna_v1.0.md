@@ -648,6 +648,33 @@ radial-gradient(circle at 50% 50%, rgba(124,58,237,0.15) 0%, transparent 60%)
 
 ---
 
+### 5.7 图片资源规范
+
+落地页共需 **4 张 AI 生成图片**，风格统一为 Dark Glassmorphism，背景纯黑 `#09090B`。
+
+#### 5.7.1 Feature Section（3 张，替换占位图）
+
+| 编号 | 对应功能 | 文件名 | 尺寸 | 图片描述 |
+|------|----------|--------|------|----------|
+| F-1 | 数字外脑 (Photographic Memory) | `feature_brain.png` | 800×600 | Dark premium UI mockup: knowledge base / note-taking app on black (#09090B) background. Glassmorphic cards with colorful tags (purple, blue, cyan pills), search bar with soft glow at top, floating note cards with blur edges. Clean minimal SaaS aesthetic. |
+| F-2 | 指挥中心 (Command Center) | `feature_dashboard.png` | 800×600 | Dark premium UI mockup: analytics dashboard on black background. Three metric cards (revenue/traffic/conversion) with glowing accent lines (purple, blue, cyan). Minimal charts with gradient area fills. Glassmorphic frosted panels. Executive dashboard — clean, data-rich, not cluttered. |
+| F-3 | 工具流 (Seamless Executor) | `feature_flow.png` | 800×600 | Dark premium UI mockup: automation workflow on black background. Connected nodes forming horizontal flow with glowing gradient connection lines (purple → blue → cyan). Each node is a glassmorphic rounded rectangle with icon. Content distributing to multiple platforms. |
+
+#### 5.7.2 Hero Section（1 张）
+
+| 编号 | 文件名 | 尺寸 | 图片描述 |
+|------|--------|------|----------|
+| H-1 | `hero_orb.png` | 1200×800 | Abstract 3D glass orb on pure black background with purple-to-cyan gradient refraction, floating above subtle reflective surface. Ethereal light rays. Ultra-minimal, cinematic lighting. No text. Evokes intelligence and elegance. |
+
+#### 5.7.3 放置规则
+
+- 所有图片存放于 `sodonna_webapp/public/images/`
+- Feature 图片通过 `/images/feature_*.png` 路径引用
+- Hero 图片作为背景装饰元素，置于文字内容层之下，`opacity: 0.3`，绝对定位居中
+- 图片格式 PNG，无透明通道需求
+
+---
+
 ## 6. 品牌与文案调性
 
 ### 6.1 Donna 人格化设定
